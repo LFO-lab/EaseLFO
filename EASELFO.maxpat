@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 531.0, 1651.0, 723.0 ],
+		"rect" : [ 96.0, 267.0, 1651.0, 723.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -402,35 +402,35 @@
 						"co_ft" : [ 69 ],
 						"co_in_polarity" : [ 1 ],
 						"co_kb" : [ 0 ],
-						"co_pitch" : [ 0.863812625408173 ],
-						"co_pitch_att" : [ 73 ],
+						"co_pitch" : [ 97.723835325773948 ],
+						"co_pitch_att" : [ 126 ],
 						"co_pitch_cv_select" : [ 0 ],
-						"co_timbre" : [ 52 ],
-						"co_timbre_att" : [ 17 ],
+						"co_timbre" : [ 38 ],
+						"co_timbre_att" : [ 126 ],
 						"co_timbre_cv_select" : [ 1 ],
 						"co_ws_sel" : [ 1 ],
 						"co_ws_xfade" : [ 0 ],
 						"eg_mode_sel" : [ 1 ],
 						"eg_trig_sel" : [ 1 ],
 						"env_att" : [ 0 ],
-						"env_dec" : [ 0 ],
+						"env_dec" : [ 1 ],
 						"env_dur" : [ 0 ],
 						"gate1_level" : [ 0 ],
 						"gate1_level_att" : [ 126 ],
 						"gate1_level_cv_select" : [ 1 ],
 						"gate1_mode_sel" : [ 1 ],
 						"gate2_level" : [ 0 ],
-						"gate2_level_att" : [ 126 ],
+						"gate2_level_att" : [ 0 ],
 						"gate2_level_cv_select" : [ 1 ],
 						"gate2_mode_sel" : [ 1 ],
 						"gate2_source_sel" : [ 0 ],
 						"inv_source" : [ 0 ],
-						"mo_freq" : [ 43.697563171386719 ],
-						"mo_freq_att" : [ 92 ],
+						"mo_freq" : [ 0.0 ],
+						"mo_freq_att" : [ 0 ],
 						"mo_freq_cv_select" : [ 0 ],
 						"mo_ft" : [ 97 ],
 						"mo_index" : [ 0 ],
-						"mo_index_att" : [ 95 ],
+						"mo_index_att" : [ 1 ],
 						"mo_index_cv_select" : [ 3 ],
 						"mo_kb" : [ 0 ],
 						"mo_mod_dest" : [ 1 ],
@@ -449,11 +449,11 @@
 						"svs_pulse_4" : [ 0 ],
 						"svs_pulse_5" : [ 0 ],
 						"svs_stages" : [ 2 ],
-						"svs_step_1" : [ 56 ],
-						"svs_step_2" : [ 89 ],
-						"svs_step_3" : [ 48 ],
-						"svs_step_4" : [ 73 ],
-						"svs_step_5" : [ 56 ],
+						"svs_step_1" : [ 59 ],
+						"svs_step_2" : [ 74 ],
+						"svs_step_3" : [ 79 ],
+						"svs_step_4" : [ 69 ],
+						"svs_step_5" : [ 58 ],
 						"svs_trig_sel" : [ 2 ],
 						"toggle" : [ 0 ]
 					}
@@ -564,7 +564,20 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-9",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 237.0, 616.0, 88.0, 22.0 ],
+									"text" : "maximum~ 20."
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-6",
 									"maxclass" : "newobj",
@@ -3430,8 +3443,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-380", 0 ],
-									"midpoints" : [ 246.019967810313346, 1014.62069034576416, 1121.449831803168308, 1014.62069034576416 ],
+									"destination" : [ "obj-9", 0 ],
 									"source" : [ "obj-65", 0 ]
 								}
 
@@ -3454,6 +3466,14 @@
 								"patchline" : 								{
 									"destination" : [ "obj-399", 1 ],
 									"source" : [ "obj-8", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-380", 0 ],
+									"midpoints" : [ 246.5, 1014.62069034576416, 1121.449831803168308, 1014.62069034576416 ],
+									"source" : [ "obj-9", 0 ]
 								}
 
 							}
@@ -10978,7 +10998,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 426.0, 411.0, 512.0, 604.0 ],
+						"rect" : [ 426.0, 410.0, 512.0, 604.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -11006,7 +11026,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-6",
@@ -11560,7 +11579,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-322",
