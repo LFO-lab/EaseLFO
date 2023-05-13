@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 13.0, -947.0, 1662.0, 723.0 ],
+		"rect" : [ 231.0, 171.0, 1730.0, 738.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -4222,6 +4222,30 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-5",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 169.790513038635254, 358.0, 169.0, 22.0 ],
+									"text" : "gen~ @gen go.vactrol.gendsp"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 354.371539115905762, 358.0, 169.0, 22.0 ],
+									"text" : "gen~ @gen go.vactrol.gendsp"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-4",
 									"maxclass" : "comment",
 									"numinlets" : 1,
@@ -5043,6 +5067,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-325", 1 ],
+									"source" : [ "obj-3", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-337", 0 ],
 									"source" : [ "obj-300", 0 ]
 								}
@@ -5109,16 +5140,16 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-314", 0 ],
-									"order" : 2,
+									"destination" : [ "obj-3", 0 ],
+									"order" : 1,
 									"source" : [ "obj-337", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-325", 1 ],
-									"order" : 1,
+									"destination" : [ "obj-5", 0 ],
+									"order" : 2,
 									"source" : [ "obj-337", 0 ]
 								}
 
@@ -5148,6 +5179,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-282", 3 ],
 									"source" : [ "obj-499", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-314", 0 ],
+									"source" : [ "obj-5", 0 ]
 								}
 
 							}
@@ -6788,7 +6826,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 62.0, 1612.0, 954.0 ],
+						"rect" : [ 34.0, 106.0, 1612.0, 954.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -6817,6 +6855,30 @@
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-6",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 155.499963078008477, 553.0, 169.0, 22.0 ],
+									"text" : "gen~ @gen go.vactrol.gendsp"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 325.661899415988898, 396.0, 169.0, 22.0 ],
+									"text" : "gen~ @gen go.vactrol.gendsp"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-5",
 									"maxclass" : "comment",
@@ -7662,17 +7724,17 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-178", 0 ],
-									"midpoints" : [ 672.611018012044951, 545.0, 164.999963078008477, 545.0 ],
-									"order" : 2,
+									"destination" : [ "obj-3", 0 ],
+									"order" : 1,
 									"source" : [ "obj-177", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-202", 1 ],
-									"order" : 1,
+									"destination" : [ "obj-6", 0 ],
+									"midpoints" : [ 672.611018012044951, 545.0, 164.999963078008477, 545.0 ],
+									"order" : 2,
 									"source" : [ "obj-177", 0 ]
 								}
 
@@ -7888,6 +7950,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-202", 1 ],
+									"source" : [ "obj-3", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-241", 3 ],
 									"source" : [ "obj-465", 0 ]
 								}
@@ -7999,6 +8068,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-224", 0 ],
 									"source" : [ "obj-592", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-178", 0 ],
+									"source" : [ "obj-6", 0 ]
 								}
 
 							}
@@ -8746,7 +8822,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-7", 0 ],
-									"midpoints" : [ 422.5, 120.0, 210.0, 120.0, 210.0, 274.0, 56.5, 274.0 ],
+									"midpoints" : [ 422.5, 120.0, 269.0, 120.0, 269.0, 274.0, 56.5, 274.0 ],
 									"source" : [ "obj-11", 0 ]
 								}
 
@@ -8997,7 +9073,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 106.0, 528.0, 1605.0, 614.0 ],
+						"rect" : [ 270.0, 512.0, 918.0, 614.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -12910,7 +12986,7 @@
 						}
 , 						{
 							"number" : 50,
-							"data" : [ 5, "obj-2", "toggle", "int", 1, 5, "obj-4", "toggle", "int", 0, 5, "obj-6", "toggle", "int", 0, 5, "obj-8", "toggle", "int", 1, 5, "obj-10", "toggle", "int", 0, 5, "obj-12", "slider", "float", 15.0, 5, "obj-13", "slider", "float", 67.0, 5, "obj-14", "slider", "float", 59.0, 5, "obj-15", "slider", "float", 73.0, 5, "obj-16", "slider", "float", 2.0, 5, "obj-21", "slider", "float", 56.0, 5, "obj-20", "slider", "float", 0.0, 5, "obj-19", "slider", "float", 0.0, 5, "obj-23", "slider", "float", 0.0, 5, "obj-22", "slider", "float", 59.0, 5, "obj-25", "slider", "float", 0.0, 5, "obj-24", "slider", "float", 126.0, 5, "obj-29", "slider", "float", 1.0, 5, "obj-28", "slider", "float", 31.604185104370117, 5, "obj-27", "slider", "float", 126.0, 5, "obj-26", "slider", "float", 0.0, 5, "obj-33", "slider", "float", 126.0, 5, "obj-32", "slider", "float", 0.0, 5, "obj-31", "slider", "float", 126.0, 5, "obj-30", "slider", "float", 0.0, 5, "obj-35", "dial", "float", 70.0, 5, "obj-36", "dial", "float", 70.0, 5, "obj-37", "dial", "float", 58.0, 5, "obj-38", "dial", "float", 64.0, 5, "obj-50", "slider", "float", 126.0, 5, "obj-49", "slider", "float", 52.335689544677734, 5, "obj-98", "umenu", "int", 0, 5, "obj-99", "umenu", "int", 1, 5, "obj-100", "umenu", "int", 2, 5, "obj-101", "umenu", "int", 2, 5, "obj-104", "umenu", "int", 1, 5, "obj-105", "umenu", "int", 4, 5, "obj-106", "umenu", "int", 4, 5, "obj-115", "dial", "float", 97.0, 5, "obj-123", "umenu", "int", 2, 5, "obj-124", "umenu", "int", 2, 5, "obj-129", "dial", "float", 69.0, 5, "obj-130", "dial", "float", 0.0, 5, "obj-132", "umenu", "int", 1, 5, "obj-153", "umenu", "int", 1, 5, "obj-154", "umenu", "int", 1, 5, "obj-155", "umenu", "int", 1, 5, "obj-158", "umenu", "int", 0, 5, "obj-163", "umenu", "int", 2, 5, "obj-164", "umenu", "int", 2, 5, "obj-165", "umenu", "int", 2, 5, "obj-166", "umenu", "int", 1, 5, "obj-172", "umenu", "int", 0, 5, "obj-175", "umenu", "int", 0, 5, "obj-184", "umenu", "int", 2, 5, "obj-185", "umenu", "int", 0, 5, "obj-188", "umenu", "int", 2, 5, "obj-189", "umenu", "int", 0, 5, "obj-190", "umenu", "int", 0, 5, "obj-191", "toggle", "int", 0, 5, "obj-94", "umenu", "int", 3, 6, "obj-127", "number~", "list", 0.0, 0.0, 5, "obj-173", "toggle", "int", 0 ]
+							"data" : [ 5, "obj-2", "toggle", "int", 1, 5, "obj-4", "toggle", "int", 1, 5, "obj-6", "toggle", "int", 1, 5, "obj-8", "toggle", "int", 1, 5, "obj-10", "toggle", "int", 1, 5, "obj-12", "slider", "float", 29.0, 5, "obj-13", "slider", "float", 24.0, 5, "obj-14", "slider", "float", 25.0, 5, "obj-15", "slider", "float", 79.0, 5, "obj-16", "slider", "float", 16.0, 5, "obj-21", "slider", "float", 0.0, 5, "obj-20", "slider", "float", 0.0, 5, "obj-19", "slider", "float", 0.0, 5, "obj-23", "slider", "float", 0.0, 5, "obj-22", "slider", "float", 59.0, 5, "obj-25", "slider", "float", 0.0, 5, "obj-24", "slider", "float", 72.0, 5, "obj-29", "slider", "float", 80.0, 5, "obj-28", "slider", "float", 52.047737121582031, 5, "obj-27", "slider", "float", 126.0, 5, "obj-26", "slider", "float", 0.0, 5, "obj-33", "slider", "float", 126.0, 5, "obj-32", "slider", "float", 0.0, 5, "obj-31", "slider", "float", 126.0, 5, "obj-30", "slider", "float", 0.0, 5, "obj-35", "dial", "float", 70.0, 5, "obj-36", "dial", "float", 70.0, 5, "obj-37", "dial", "float", 0.0, 5, "obj-38", "dial", "float", 69.0, 5, "obj-50", "slider", "float", 126.0, 5, "obj-49", "slider", "float", 38.245307922363281, 5, "obj-98", "umenu", "int", 2, 5, "obj-99", "umenu", "int", 1, 5, "obj-100", "umenu", "int", 3, 5, "obj-101", "umenu", "int", 0, 5, "obj-104", "umenu", "int", 1, 5, "obj-105", "umenu", "int", 1, 5, "obj-106", "umenu", "int", 1, 5, "obj-115", "dial", "float", 97.0, 5, "obj-123", "umenu", "int", 2, 5, "obj-124", "umenu", "int", 1, 5, "obj-129", "dial", "float", 40.0, 5, "obj-130", "dial", "float", 0.0, 5, "obj-132", "umenu", "int", 1, 5, "obj-153", "umenu", "int", 0, 5, "obj-154", "umenu", "int", 1, 5, "obj-155", "umenu", "int", 0, 5, "obj-158", "umenu", "int", 0, 5, "obj-163", "umenu", "int", 2, 5, "obj-164", "umenu", "int", 2, 5, "obj-165", "umenu", "int", 2, 5, "obj-166", "umenu", "int", 1, 5, "obj-172", "umenu", "int", 0, 5, "obj-175", "umenu", "int", 0, 5, "obj-184", "umenu", "int", 2, 5, "obj-185", "umenu", "int", 0, 5, "obj-188", "umenu", "int", 2, 5, "obj-189", "umenu", "int", 0, 5, "obj-190", "umenu", "int", 0, 5, "obj-191", "toggle", "int", 0, 5, "obj-94", "umenu", "int", 3, 6, "obj-127", "number~", "list", 0.0, 0.0, 5, "obj-173", "toggle", "int", 0 ]
 						}
 , 						{
 							"number" : 51,
@@ -16983,50 +17059,22 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "control.gendsp",
-				"bootpath" : "~/Documents/GitHub/EaseLFO",
-				"patcherrelativepath" : ".",
+				"name" : "go.onepole.basic.gendsp",
+				"bootpath" : "~/Documents/Max 8/Packages/GeneratingSoundAndOrganizingTime/patchers",
+				"patcherrelativepath" : "../../../Max 8/Packages/GeneratingSoundAndOrganizingTime/patchers",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "envFollow.gendsp",
-				"bootpath" : "~/Documents/GitHub/EaseLFO",
-				"patcherrelativepath" : ".",
-				"type" : "gDSP",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "lpg.gendsp",
-				"bootpath" : "~/Documents/GitHub/EaseLFO",
-				"patcherrelativepath" : ".",
+				"name" : "go.vactrol.gendsp",
+				"bootpath" : "~/Documents/Max 8/Packages/GeneratingSoundAndOrganizingTime/patchers",
+				"patcherrelativepath" : "../../../Max 8/Packages/GeneratingSoundAndOrganizingTime/patchers",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "multiconvolve~.mxo",
 				"type" : "iLaX"
-			}
-, 			{
-				"name" : "non-linear.gendsp",
-				"bootpath" : "~/Documents/GitHub/EaseLFO",
-				"patcherrelativepath" : ".",
-				"type" : "gDSP",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "presets.json",
-				"bootpath" : "~/Documents/GitHub/EaseLFO",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "timbre.gendsp",
-				"bootpath" : "~/Documents/GitHub/EaseLFO",
-				"patcherrelativepath" : ".",
-				"type" : "gDSP",
-				"implicit" : 1
 			}
  ],
 		"autosave" : 0,
