@@ -7,7 +7,7 @@
 				"data" : 				{
 					"button" : [ 0.0 ],
 					"button[1]" : [ 0.0 ],
-					"button[2]" : [ 0.0 ],
+					"button[2]" : [ 1.0 ],
 					"button[3]" : [ 0.0 ],
 					"button[4]" : [ 0.0 ],
 					"chan_a_level" : [ 70.0 ],
@@ -53,8 +53,8 @@
 					"pul_period" : [ 48 ],
 					"pul_period_att" : [ 0 ],
 					"pul_trig_sel" : [ 0 ],
-					"pulser_led" : [ 0.0 ],
-					"pulser_led[1]" : [ 0.0 ],
+					"pulser_led" : [ 1.0 ],
+					"pulser_led[1]" : [ 1.0 ],
 					"rand_trig_sel" : [ 2 ],
 					"svs_pulse_1" : [ 1 ],
 					"svs_pulse_2" : [ 0 ],
@@ -76,10 +76,10 @@
 			"2" : 			{
 				"id" : 2,
 				"data" : 				{
-					"button" : [ 1.0 ],
+					"button" : [ 0.0 ],
 					"button[1]" : [ 0.0 ],
 					"button[2]" : [ 0.0 ],
-					"button[3]" : [ 0.0 ],
+					"button[3]" : [ 1.0 ],
 					"button[4]" : [ 0.0 ],
 					"chan_a_level" : [ 70.0 ],
 					"chan_b_level" : [ 70.0 ],

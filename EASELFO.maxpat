@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 4,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 72.0, 1601.0, 664.0 ],
+		"rect" : [ 127.0, 90.0, 1601.0, 664.0 ],
 		"openrect" : [ 0.0, 0.0, 1601.0, 664.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -538,7 +538,7 @@
 					"restore" : 					{
 						"button" : [ 0.0 ],
 						"button[1]" : [ 0.0 ],
-						"button[2]" : [ 0.0 ],
+						"button[2]" : [ 1.0 ],
 						"button[3]" : [ 0.0 ],
 						"button[4]" : [ 0.0 ],
 						"chan_a_level" : [ 70.0 ],
@@ -562,11 +562,11 @@
 						"gate1_level" : [ 0 ],
 						"gate1_level_att" : [ 126 ],
 						"gate1_level_cv_select" : [ 1 ],
-						"gate1_mode_sel" : [ 0 ],
+						"gate1_mode_sel" : [ 1 ],
 						"gate2_level" : [ 0 ],
 						"gate2_level_att" : [ 126 ],
 						"gate2_level_cv_select" : [ 1 ],
-						"gate2_mode_sel" : [ 0 ],
+						"gate2_mode_sel" : [ 1 ],
 						"gate2_source_sel" : [ 0 ],
 						"inv_source" : [ 0 ],
 						"mo_freq" : [ 98.981575012207031 ],
@@ -584,8 +584,8 @@
 						"pul_period" : [ 48 ],
 						"pul_period_att" : [ 0 ],
 						"pul_trig_sel" : [ 0 ],
-						"pulser_led" : [ 0.0 ],
-						"pulser_led[1]" : [ 0.0 ],
+						"pulser_led" : [ 1.0 ],
+						"pulser_led[1]" : [ 1.0 ],
 						"rand_trig_sel" : [ 2 ],
 						"svs_pulse_1" : [ 1 ],
 						"svs_pulse_2" : [ 0 ],
@@ -674,7 +674,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3679,7 +3679,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -4330,7 +4330,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -4422,7 +4422,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 5,
-											"revision" : 4,
+											"revision" : 5,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -5435,7 +5435,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -6523,7 +6523,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -6964,7 +6964,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -7056,7 +7056,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 5,
-											"revision" : 4,
+											"revision" : 5,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -7091,6 +7091,18 @@
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
 										"boxes" : [ 											{
+												"box" : 												{
+													"id" : "obj-8",
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "signal" ],
+													"patching_rect" : [ 49.99998534775591, 281.0, 37.25001465224409, 22.0 ],
+													"text" : "*~"
+												}
+
+											}
+, 											{
 												"box" : 												{
 													"fontsize" : 16.0,
 													"id" : "obj-22",
@@ -7130,48 +7142,12 @@
 											}
 , 											{
 												"box" : 												{
-													"id" : "obj-6",
-													"maxclass" : "newobj",
-													"numinlets" : 2,
-													"numoutlets" : 1,
-													"outlettype" : [ "signal" ],
-													"patching_rect" : [ 68.25, 175.0, 37.0, 22.0 ],
-													"text" : "*~ 10"
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"id" : "obj-5",
-													"maxclass" : "newobj",
-													"numinlets" : 5,
-													"numoutlets" : 3,
-													"outlettype" : [ "signal", "signal", "signal" ],
-													"patching_rect" : [ 50.0, 331.092945127526946, 92.0, 22.0 ],
-													"text" : "gen~ non-linear"
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"id" : "obj-3",
-													"maxclass" : "newobj",
-													"numinlets" : 3,
-													"numoutlets" : 1,
-													"outlettype" : [ "signal" ],
-													"patching_rect" : [ 68.25, 216.039786077245481, 75.0, 22.0 ],
-													"text" : "gen~ control"
-												}
-
-											}
-, 											{
-												"box" : 												{
 													"id" : "obj-1",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "signal" ],
-													"patching_rect" : [ 68.25, 148.0, 55.0, 22.0 ],
+													"patching_rect" : [ 68.25, 141.0, 55.0, 22.0 ],
 													"text" : "gen~ lpg"
 												}
 
@@ -7217,14 +7193,14 @@
  ],
 										"lines" : [ 											{
 												"patchline" : 												{
-													"destination" : [ "obj-6", 0 ],
+													"destination" : [ "obj-8", 1 ],
 													"source" : [ "obj-1", 0 ]
 												}
 
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-5", 0 ],
+													"destination" : [ "obj-8", 0 ],
 													"source" : [ "obj-11", 0 ]
 												}
 
@@ -7239,13 +7215,6 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-5", 1 ],
-													"source" : [ "obj-3", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
 													"destination" : [ "obj-1", 0 ],
 													"source" : [ "obj-4", 0 ]
 												}
@@ -7254,14 +7223,7 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-13", 0 ],
-													"source" : [ "obj-5", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
-													"destination" : [ "obj-3", 0 ],
-													"source" : [ "obj-6", 0 ]
+													"source" : [ "obj-8", 0 ]
 												}
 
 											}
@@ -8218,7 +8180,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -8548,7 +8510,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -9209,7 +9171,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -10353,7 +10315,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -11177,7 +11139,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -11730,7 +11692,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -17142,35 +17104,35 @@
 			}
 , 			{
 				"name" : "control.gendsp",
-				"bootpath" : "~/Documents/GitHub/EaseLFO_main",
+				"bootpath" : "~/Documents/GitHub/EaseLFO",
 				"patcherrelativepath" : ".",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "envFollow.gendsp",
-				"bootpath" : "~/Documents/GitHub/EaseLFO_main",
+				"bootpath" : "~/Documents/GitHub/EaseLFO",
 				"patcherrelativepath" : ".",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "go.onepole.basic.gendsp",
-				"bootpath" : "~/Documents/GitHub/EaseLFO_main",
+				"bootpath" : "~/Documents/GitHub/EaseLFO",
 				"patcherrelativepath" : ".",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "go.vactrol.gendsp",
-				"bootpath" : "~/Documents/GitHub/EaseLFO_main",
+				"bootpath" : "~/Documents/GitHub/EaseLFO",
 				"patcherrelativepath" : ".",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "lpg.gendsp",
-				"bootpath" : "~/Documents/GitHub/EaseLFO_main",
+				"bootpath" : "~/Documents/GitHub/EaseLFO",
 				"patcherrelativepath" : ".",
 				"type" : "gDSP",
 				"implicit" : 1
@@ -17181,21 +17143,21 @@
 			}
 , 			{
 				"name" : "non-linear.gendsp",
-				"bootpath" : "~/Documents/GitHub/EaseLFO_main",
+				"bootpath" : "~/Documents/GitHub/EaseLFO",
 				"patcherrelativepath" : ".",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "presets.json",
-				"bootpath" : "~/Documents/GitHub/EaseLFO_main",
+				"bootpath" : "~/Documents/GitHub/EaseLFO",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "timbre.gendsp",
-				"bootpath" : "~/Documents/GitHub/EaseLFO_main",
+				"bootpath" : "~/Documents/GitHub/EaseLFO",
 				"patcherrelativepath" : ".",
 				"type" : "gDSP",
 				"implicit" : 1
